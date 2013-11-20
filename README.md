@@ -1,7 +1,5 @@
-data_processing
-===============
-
 Visualizing Data with Processing
+===============
 
 Data Types
 CSV – Comma Separated Values
