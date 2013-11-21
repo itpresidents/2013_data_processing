@@ -13,10 +13,10 @@ void setup() {
 
   //OAuth credentials
   ConfigurationBuilder cb = new ConfigurationBuilder();
-  cb.setOAuthConsumerKey("h65HznzMdREESPtUbaH5g");
-  cb.setOAuthConsumerSecret("VF1ZYJXCFaglSMDdauNhgPZWdWN4h1ddht0EhL703Qo");
-  cb.setOAuthAccessToken("188154178-DjqiH1yamkjM95b3jBu7qWNolVDAxZiqL17gaKiv");
-  cb.setOAuthAccessTokenSecret("mxeat7Set1qoGkxioR5xUYPCX8enAa6NxYVNNUW7r3zFt");
+  cb.setOAuthConsumerKey("YOUR_KEY");
+  cb.setOAuthConsumerSecret("YOUR_SECRET");
+  cb.setOAuthAccessToken("YOUR_TOKEN");
+  cb.setOAuthAccessTokenSecret("YOUR_SECRET");
 
   //new Twitter instance
   tf = new TwitterFactory(cb.build());
@@ -45,7 +45,7 @@ void draw() {
 void keyPressed() {
 
   try {
-    Status status = twitter.updateStatus("testing yet again!");
+    Status status = twitter.updateStatus("greetings from the data and processing workshop!");
     println("status posted!");
   } catch (TwitterException te) {
     println("ERROR: " + te);
